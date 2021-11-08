@@ -1,0 +1,605 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://colored_tilemap.png" type="Texture" id=2]
+[ext_resource path="res://Pixeled.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://door.gd" type="Script" id=4]
+[ext_resource path="res://TheTown.tscn" type="PackedScene" id=5]
+
+[sub_resource type="TileSet" id=1]
+0/name = "colored_tilemap.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 108, 45, 8, 8 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="TileSet" id=2]
+0/name = "colored_tilemap.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 117, 36, 8, 8 )
+0/tile_mode = 2
+0/autotile/icon_coordinate = Vector2( 0, 0 )
+0/autotile/tile_size = Vector2( 8, 8 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "colored_tilemap.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 99, 45, 8, 8 )
+1/tile_mode = 2
+1/autotile/icon_coordinate = Vector2( 0, 0 )
+1/autotile/tile_size = Vector2( 8, 8 )
+1/autotile/spacing = 0
+1/autotile/occluder_map = [  ]
+1/autotile/navpoly_map = [  ]
+1/autotile/priority_map = [  ]
+1/autotile/z_index_map = [  ]
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "colored_tilemap.png 2"
+2/texture = ExtResource( 2 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 90, 54, 8, 8 )
+2/tile_mode = 2
+2/autotile/icon_coordinate = Vector2( 0, 0 )
+2/autotile/tile_size = Vector2( 8, 8 )
+2/autotile/spacing = 0
+2/autotile/occluder_map = [  ]
+2/autotile/navpoly_map = [  ]
+2/autotile/priority_map = [  ]
+2/autotile/z_index_map = [  ]
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "colored_tilemap.png 3"
+3/texture = ExtResource( 2 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 18, 18, 8, 8 )
+3/tile_mode = 2
+3/autotile/icon_coordinate = Vector2( 0, 0 )
+3/autotile/tile_size = Vector2( 8, 8 )
+3/autotile/spacing = 0
+3/autotile/occluder_map = [  ]
+3/autotile/navpoly_map = [  ]
+3/autotile/priority_map = [  ]
+3/autotile/z_index_map = [  ]
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+
+[sub_resource type="TileSet" id=3]
+0/name = "colored_tilemap.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 108, 45, 8, 8 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="QuadMesh" id=4]
+size = Vector2( 35, 35 )
+
+[sub_resource type="TileSet" id=5]
+0/name = "colored_tilemap.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 8, 8 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "colored_tilemap.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 27, 0, 8, 8 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "colored_tilemap.png 2"
+2/texture = ExtResource( 2 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 9, 0, 8, 8 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+
+[sub_resource type="Animation" id=10]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("YSort/Door:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 2, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("YSort/Door:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 2, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("YSort/Door:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 19, 18 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "door_move"
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("YSort/Door:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 1.75118, -0.25, 0, 0.5, 0.00705421, 2, -0.25, 0, 0.25, 0, 1.75, -0.5, 0.00399745, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 1 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("YSort/Door:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 2, -0.25, 0, 0.4, 0.00308681, 2.49176, -0.2, 0.00421286, 0.3, -0.00842547, 1.99466, -0.4, 0.00421274, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("YSort/Door:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 19, 20 ), Vector2( 19.1496, 19.7491 ), Vector2( 18.9913, 18.267 ), Vector2( 19, 18 ), Vector2( 19, 18.1308 ), Vector2( 19.0117, 19.5931 ), Vector2( 19.16, 19.9511 ), Vector2( 19.2205, 20.0107 ), Vector2( 19, 20 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "start"
+length = 3.641
+tracks/0/type = "value"
+tracks/0/path = NodePath("RichTextLabel:percent_visible")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.2 ),
+"transitions": PoolRealArray( 0.615572, 0.297301 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("RichTextLabel:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2.1, 2.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ColorRect:color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.1, 2.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+tracks/3/type = "method"
+tracks/3/path = NodePath("YSort/Player")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 3.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [ false ],
+"method": "_change_if_can_move"
+}, {
+"args": [ true ],
+"method": "_change_if_can_move"
+} ]
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("YSort/Player:position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 91, -0.25, 0, 0.25, 0, 91, -0.25, 0, 0.25, 0, 88.806, -2.2, 0, 0, 0.0434723 ),
+"times": PoolRealArray( 0, 2.9, 3.1 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("YSort/Player:position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 40, -0.25, 0, 0.25, 0, 40, -0.25, 0, 0, -2.61238, 30.6115, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2.9, 3.1 )
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("YSort/Player:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 2.9, 3.1, 3.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2, 2 ), Vector2( 2, 2 ), Vector2( 2.2, 2.2 ), Vector2( 2, 2 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("YSort/Player:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 2.9, 3.1, 3.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 90.0, 90.0, -15.0, 0.0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("YSort/Player:z_index")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 2.9, 3.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 0, -1 ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("RichTextLabel:text")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 2.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "we need help
+
+", "we need help
+
+" ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("AnimationPlayer:current_animation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 3.6 ),
+"transitions": PoolRealArray( 1 ),
+"update": 2,
+"values": [ "door_move" ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("YSort/Door:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 19, 20 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("YSort/Door:scale")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.75118, 2 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 16, 6.5 )
+
+[sub_resource type="CircleShape2D" id=12]
+
+[sub_resource type="DynamicFont" id=7]
+size = 10
+font_data = ExtResource( 3 )
+
+[node name="TheBedRoom" type="Node2D"]
+
+[node name="wall" type="TileMap" parent="."]
+modulate = Color( 0.623529, 0.717647, 0.666667, 1 )
+rotation = 1.5708
+scale = Vector2( 1.75, 1.75 )
+z_index = -5
+tile_set = SubResource( 1 )
+cell_size = Vector2( 8, 8 )
+format = 1
+tile_data = PoolIntArray( -524288, 0, 0, -524287, 0, 0, -458752, 0, 0, -458751, 0, 0, -393216, 0, 0, -393215, 0, 0, -327680, 0, 0, -327679, 0, 0, -262144, 0, 0, -262143, 0, 0, -196608, 0, 0, -196607, 0, 0, -131072, 0, 0, -131071, 0, 0, -65536, 0, 0, -65535, 0, 0 )
+
+[node name="decor" type="TileMap" parent="."]
+position = Vector2( 0, 6 )
+scale = Vector2( 1.75, 1.75 )
+z_index = -5
+tile_set = SubResource( 2 )
+cell_size = Vector2( 8, 8 )
+format = 1
+tile_data = PoolIntArray( -65533, 1, 0, 2, 2, 0, 3, 1, 0, 4, 0, 0, 5, 0, 0 )
+
+[node name="Ground" type="TileMap" parent="."]
+modulate = Color( 0.509804, 0.631373, 0.564706, 1 )
+scale = Vector2( 1.75, 1.75 )
+z_index = -5
+tile_set = SubResource( 3 )
+cell_size = Vector2( 8, 8 )
+format = 1
+tile_data = PoolIntArray( 131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 0, 0 )
+
+[node name="fernes" type="Sprite" parent="."]
+position = Vector2( 93, 21 )
+scale = Vector2( 1.75, 1.75 )
+z_index = -5
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 72, 81, 8, 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="fire" type="Sprite" parent="fernes"]
+position = Vector2( -7.62939e-06, 1.14286 )
+scale = Vector2( 0.642857, 0.642857 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 81, 72, 8, 8 )
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color( 0.376471, 0.376471, 0.439216, 1 )
+position = Vector2( 36, 52 )
+z_index = -5
+mesh = SubResource( 4 )
+
+[node name="carpet" type="TileMap" parent="."]
+z_index = -5
+tile_set = SubResource( 5 )
+cell_size = Vector2( 8, 8 )
+format = 1
+tile_data = PoolIntArray( 262146, 0, 0, 262147, 2, 0, 262148, 2, 0, 262149, 2, 0, 262150, 1, 0 )
+
+[node name="carpet2" type="TileMap" parent="carpet"]
+rotation = 1.5708
+tile_set = SubResource( 5 )
+cell_size = Vector2( 8, 8 )
+format = 1
+tile_data = PoolIntArray( -458747, 2, 0, -458746, 2, 0, -458745, 2, 0, -458744, 1, 0 )
+
+[node name="carpet3" type="TileMap" parent="carpet"]
+rotation = -1.5708
+tile_set = SubResource( 5 )
+cell_size = Vector2( 8, 8 )
+format = 1
+tile_data = PoolIntArray( 196599, 0, 0, 196600, 2, 0, 196601, 2, 0, 196602, 2, 0 )
+
+[node name="carpet4" type="TileMap" parent="carpet"]
+rotation = 3.14159
+tile_set = SubResource( 5 )
+cell_size = Vector2( 8, 8 )
+format = 1
+tile_data = PoolIntArray( -524294, 2, 0, -524293, 2, 0, -524292, 2, 0 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "start"
+anims/RESET = SubResource( 10 )
+anims/door_move = SubResource( 11 )
+anims/start = SubResource( 6 )
+
+[node name="YSort" type="YSort" parent="."]
+z_index = -1
+
+[node name="pet" type="Sprite" parent="YSort"]
+position = Vector2( 7, 39 )
+scale = Vector2( 1.5, 1.5 )
+z_index = -2
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 72, 18, 8, 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="flower" type="Sprite" parent="YSort/pet"]
+position = Vector2( 0, -6 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 63, 45, 8, 8 )
+
+[node name="Player" parent="YSort" instance=ExtResource( 1 )]
+position = Vector2( 91, 40 )
+scale = Vector2( 2, 2 )
+z_index = 0
+
+[node name="Bed" type="StaticBody2D" parent="YSort"]
+position = Vector2( 88, 42 )
+z_index = -1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bed" type="Sprite" parent="YSort/Bed"]
+self_modulate = Color( 0.862745, 0.858824, 0.956863, 1 )
+rotation = -3.14159
+scale = Vector2( 4, -4 )
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 126, 27, 8, 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Bed"]
+z_index = -1
+shape = SubResource( 9 )
+
+[node name="Door" type="Sprite" parent="YSort"]
+position = Vector2( 19, 18 )
+scale = Vector2( 2, 2 )
+z_index = -2
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 36, 18, 8, 8 )
+
+[node name="door" type="Area2D" parent="YSort"]
+script = ExtResource( 4 )
+scene = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/door"]
+position = Vector2( 19, 8 )
+shape = SubResource( 12 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 112.0
+margin_bottom = 84.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 1.0
+margin_top = 6.0
+margin_right = 109.0
+margin_bottom = 76.0
+custom_fonts/normal_font = SubResource( 7 )
+bbcode_text = "
+"
+visible_characters = 0
+percent_visible = 0.656026
+meta_underlined = false
+tab_size = 3
+text = "
+"
+scroll_active = false
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="wall2" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall2"]
+polygon = PoolVector2Array( 112, 17, 28, 17, 25, 10, 12, 10, 10, 17, -2, 17, -2, 86, 111, 85, 113, 15, 120, 87, 115, 87, -8, 88, -10, 12, -3, -3, 116, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="body_entered" from="YSort/door" to="YSort/door" method="_on_door_body_entered"]
